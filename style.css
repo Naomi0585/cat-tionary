@@ -1,6 +1,50 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
 body{
-    background-color:rgb(210, 155, 235);
-    margin: auto;
-    padding: 0; 
-    font-family: 'Courier New' , Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(242, 213, 177);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: rgb(226, 216, 239);
+
+}
+
+nav a {
+text-decoration: none;
+color: rgb(216, 216, 201);
+font-weight: bold;
+}
+
+.hero {
+    background-color: rgb(204, 195, 213);
+text-align:center;
+padding: 3rem 1rem;
 } 
+
+.hero h1 {
+    font-size: 4rem;
+    color:rgb(174, 132, 213)
+}
+
+.hero button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+ <section class="hero">
+ <h1>Cationary</h1>
+ <button>Welcome!</button>
+  </section>
