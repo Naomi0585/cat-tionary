@@ -19,38 +19,49 @@
         </ul>
     </nav>
 <section class="hero">
-    <div class="hero content">
-        <h1>Cationary</h1>
+    <div class="hero-content">
         <img src="Imgs/catbook.webp">
+        <h1>Cationary</h1>
+        
     </div>
 
-    <p class="hero text">
+    <button>Welcome!</button>
+</section>
+
+    <p class="hero-text">
         Do you tend to feel like you are staffed by your cat?  
       Cationary is here to help you understand your feline boss better.
     </p>
-</section>
+
+    <h2 style="text-align: center; margin-top: 40px;">
+        What does your boss look like?
+    </h2>
+
 
 <section class="cards">
 
-    <div class="card">
-        <img src="Imgs/Siamese-Cat_0.webp" alt="Siamese">
-        <p>
+    <div class="card siamese">
+        <img src="Imgs/Siamese-Cat_0.webp" alt="Siamese" data-cat="siamese">
+        <h3>Siamese</h3>
+        <p id="Siamese">
              Siamese cats are vocal, dramatic, affectionate, and incredibly intelligent.
         They crave companionship and stimulation.
         </p>
     </div>
 
-    <div class="card">
-        <img src="Imgs/orangetabby.jpg" alt="Orange Tabby">
-        <p>
+    <div class="card orangetabby">
+        <img src="Imgs/orangetabby.jpg" alt="Orange Tabby" data-cat="orangetabby">
+        <h3>Orange Tabby</h3>
+        <p id="orangetabby">
              Orange tabbies are friendly, easygoing, and playful.
         They are independent but love interaction.
         </p>
         </div>
 
-        <div class="card">
-            <img src="Imgs/BPMBAY.jpg" alt="Bombay">
-            <p>
+        <div class="card Bombay">
+            <img src="Imgs/BPMBAY.jpg" alt="Bombay" data-cat="bombay">
+            <h3>Bombay</h3>
+            <p id="Bombay">
                  Bombay cats are curious, confident, and protective.
         They form strong bonds and love exploring.
             </p>
@@ -63,6 +74,8 @@
 <footer>
     <p>&copy; 2025 Cationary</p>
   </footer>
+
+  <script src="app.js"></script>
 
 </body>
 </html>

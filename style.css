@@ -1,15 +1,21 @@
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff7ee;
+    color: #222;
 }
 
 nav{
     display: flex;
     justify-content: center;
     padding: 20px;
-    border-bottom: 1px solid #ddd;
+    
 }
 
 nav ul{
@@ -21,14 +27,15 @@ nav ul{
 
 nav a{
     text-decoration: none;
-    color: aquamarine;
+    color:#555;
     font-weight: 600;
 }
 
 .hero{
-    background-color: bisque;
-    padding: 50px 20px;
-    text-align: center;
+    background-color: #8fb18f;
+    border-radius: 30px;
+    margin: 30px;
+    padding: 60px 40px;
 }
 
 .hero-content{
@@ -39,45 +46,102 @@ nav a{
 
 }
 
-.hero-content h1{
-    font-size: 64px;
+.hero-content img{
+    width: 140px;
 }
 
-.hero-content img{
-    width: 120px;
-    height: auto;
+.hero-content h1{
+   font-size: 56px;
+   color: white;
+}
+
+.hero button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    
 }
 
 .hero-text{
-    margin-top: 20px;
-    max-width: 600px;
-    margin-inline: auto;
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
     font-size: 16px;
+    line-height: 1.6;
 }
 
 .cards{
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding: 60px 40px;
+    padding: 40px;
 }
 
 .card{
-    width: 230px;
+    width: 220px;
     text-align: center;
 }
 
 .card img{
-    width: 100%;
-    max-width: 160px;
-    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 140px;
+    height: auto;
+    background-color: white;
+    padding: 12px;
+    border-radius: 16px;
+    
+}
+
+.card img:hover{
+    transform: scale(1.05);
+}
+
+
+.card h3{
+    margin-top: 10px;
+    padding: 4px 10px;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 14px;
+  
+}
+
+.card.siamese h3{
+    background-color: #6ec1ff;
+}
+
+card.orange h3{
+    background-color: #f7b267;
+}
+
+card.bombay h3{
+    background-color: #8a6cff;
 }
 
 .card p{
-    color:rgb(138, 204, 145);
-    font-size: 14px;
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 13px;
     line-height: 1.4;
+}
 
+.card.siamese p{
+    background-color: #cce9ff;
+}
+
+.card.orange p{
+    background-color: #ffd89c;
+}
+
+.card.bombay p{
+    background-color: #d9ccff;
 }
 
 footer{
